@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../img/LogoIco.png" type="image/x-icon">
+        <title>Lista para pesquisa</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="lista_nav">
+                    <li><a href="#"target="_blank">Home</a></li>
+                </ul>
+                <h1 id="titulo">Lista de busca com PDF para download dos valores.</h1>
+            </nav>
+        </header>
+        
+        <div id="agrupar_div">
+            <form id="form_agrupamento">
+                <p class="paragrafo">Pesquise abaixo o valor desejado.</p>
+                <input type="text" name="valor_digitado" id="valor_digitado" onclick="this.value=''" placeholder="Valor">
+
+                <button style="margin-right: 8px;" type="button" value="Enviar" id="botao_confirma" class="botoes" onclick="receberDado()">Pesquisar</button>
+                <button type="button" class="botoes" onclick="gerarPDF()">Baixar</button>
+
+                <div id="div_span">
+                    <span id="resultado">O resultado será mostrado aqui.<p>Baixar para fazer download do PDF contendo os resultados.</p></span>
+                </div>
+            </form>
+        </div>
+        <footer id="rodape"><small>João Lucas © Todos os direitos reservados.</small></footer>
+
+        <script src="../js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+    </body>
+</html>
